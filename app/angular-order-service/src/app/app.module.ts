@@ -1,0 +1,16 @@
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
+import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
+import { BrowserModule } from '@angular/platform-browser';
+import { AppComponent } from './app.component';
+import { MockOrdersInterceptor } from './mock-orders.interceptor';
+
+@NgModule({
+  declarations: [AppComponent],
+  imports: [BrowserModule, FormsModule, HttpClientModule],
+  providers: [
+    { provide: HTTP_INTERCEPTORS, useClass: MockOrdersInterceptor, multi: true }
+  ],
+  bootstrap: [AppComponent]
+})
+export class AppModule {}

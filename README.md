@@ -4,6 +4,10 @@ This hands-on workshop teaches you how to assess, plan, and execute a Java appli
 
 The workshop supports two learning paths: **GitHub Copilot App** and **GitHub Copilot CLI**.
 
+For the separate Angular and TypeScript modernization exercise, start with the
+[Angular workshop](docs/angular/workshop.md). It uses its own legacy starter and
+does not change the Java workshop.
+
 > **Recommended:** Open the [official workshop on the MOAW platform](https://aka.ms/agenticdevlab) for the best guided experience, including path-specific instructions, navigation, and rendered workshop assets.
 
 ## What You Will Learn
@@ -34,8 +38,10 @@ The complete workshop takes approximately **120 minutes** and is suitable for be
 ## Repository Contents
 
 - `docs/workshop.md` contains the full workshop instructions.
+- `docs/angular/workshop.md` contains the Angular/TypeScript adaptation.
 - `docs/assets/` contains screenshots and supporting workshop media.
 - `app/Java - Spring Boot/Order Service/` contains the Spring Boot backend, React frontend, and automated tests used throughout the migration.
+- `app/angular-order-service/` contains the independent Angular/TypeScript starter and tests.
 - `.devcontainer/` provides a ready-to-use GitHub Codespaces development environment.
 
 ## Prerequisites
